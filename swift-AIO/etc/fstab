@@ -1,0 +1,2 @@
+/dev/vdb /swift/vdb xfs noatime,nodiratime,nobarrier,logbufs=8 0 2
+/dev/vdc /swift/vdc xfs noatime,nodiratime,nobarrier,logbufs=8 0 2
