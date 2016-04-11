@@ -6,8 +6,6 @@ RUN set -x \
 		swift-account \
 	&& apt-get -y clean \
 	&& rm -f /var/lib/keystone/keystone.db
-VOLUME /swift/vdb
-VOLUME /swift/vdc
 #VOLUME /etc/swift/
 
 #ADD etc/swift/account-server.conf /etc/swift/

@@ -10,9 +10,6 @@ RUN set -x \
 		python-keystonemiddleware \
 	&& apt-get -y clean \
 	&& rm -f /var/lib/keystone/keystone.db
-VOLUME /etc/keystone
-VOLUME /swift/vdb/
-VOLUME /swift/vdc/
 #VOLUME /etc/swift/
 
 ADD admin-openrc.sh /root/admin-openrc.sh

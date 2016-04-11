@@ -24,5 +24,4 @@ ADD etc/openstack-dashboard/local_settings.py /etc/openstack-dashboard/local_set
 ADD etc/keystone/keystone-paste.ini /etc/keystone/keystone-paste.ini
 ADD etc/apache2/sites-available/wsgi-keystone.conf /etc/apache2/sites-available/wsgi-keystone.conf
 RUN ln -s /etc/apache2/sites-available/wsgi-keystone.conf /etc/apache2/sites-enabled
-RUN service apache2 restart
 RUN echo "manual" > /etc/init/keystone.override

@@ -6,8 +6,6 @@ RUN set -x \
 		swift-container \
 	&& apt-get -y clean \
 	&& rm -f /var/lib/keystone/keystone.db
-VOLUME /swift/vdb
-VOLUME /swift/vdc
 #VOLUME /etc/swift/
 
 #ADD etc/swift/container-server.conf /etc/swift/
